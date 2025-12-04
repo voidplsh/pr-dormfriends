@@ -8,27 +8,32 @@
     <h2>## service directory</h2>
     <ul class="service-list">
       @for (service of services; track service.label) {
-        <li class="service-item">
-          <div class="service-content">
-            <div class="service-main">
-              <a [href]="service.url" rel="noreferrer" target="_blank">{{ service.label }}</a>
-              @if (service.note) {
-                <span class="muted">— {{ service.note }}</span>
-              }
-            </div>
-            <div class="service-tags">
-              @if (service.status) {
-                <span class="badge status">{{ service.status }}</span>
-              }
-              @if (service.host) {
-                <span class="badge" [ngClass]="service.host">{{ service.host }}</span>
-              }
-              @if (service.offline) {
-                <span class="badge offline">offline</span>
-              }
-            </div>
+      <li class="service-item">
+        <div class="service-content">
+          <div class="service-main">
+            @if (service.url) {
+            <a [href]="service.url" class="service-link" rel="noreferrer" target="_blank">{{ service.label }}</a>
+            } @else {
+            <a>{{ service.label }}</a>
+            }
+            @if (service.note) {
+            <span class="muted">— {{ service.note }}</span>
+            }
           </div>
-        </li>
+          <div class="service-tags">
+            @if (service.status) {
+            <span class="badge status">{{ service.status }}</span>
+            }
+            @if (service.offline) {
+            <span class="badge offline">offline</span>
+            }
+            @if (service.host) {
+            <span class="badge" [ngClass]="service.host">{{ service.host }}</span>
+            }
+
+          </div>
+        </div>
+      </li>
       }
     </ul>
   </div>

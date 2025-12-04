@@ -87,6 +87,18 @@ section {
       color: #ff9d57;
     }
 
+    &.pages {
+      border-color: #ffd257;
+      background: #2f2715;
+      color: #ffd257;
+    }
+
+    &.enterprise {
+      border-color: #5776ff;
+      background: #151c2f;
+      color: #5776ff;
+    }
+
     &.basalt {
       border-color: #6c6f85;
       background: #1b1b23;
@@ -114,5 +126,13 @@ section {
   p,
   pre {
     margin: 0;
+  }
+}
+
+.service-link {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: underline dashed;
   }
 }

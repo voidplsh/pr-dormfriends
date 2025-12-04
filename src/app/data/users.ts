@@ -28,6 +28,18 @@ export const users: User[] = [
       { label: 'fediverse', url: 'https://dorm.social/@irisnk' },
     ],
   },
+  {
+    username: 'emiliank',
+    bioShort: 'blue sharkie fan!!',
+    bioLong: `hi im emilia and i like girls`,
+    avatar: 'https://avatars.githubusercontent.com/u/66714101?v=4',
+    links: [
+      { label: 'dormsoc', url: 'https://dorm.social/@emilia' },
+      { label: 'github', url: 'https://github.com/orbitaldusk' },
+      { label: 'website', url: 'https://orbitaldu.sk' },
+      { label: 'bsky', url: 'https://bsky.app/profile/orbitaldu.sk' },
+    ],
+  },
 ];
 
 /**
