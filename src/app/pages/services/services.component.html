@@ -10,13 +10,23 @@
       @for (service of services; track service.label) {
         <li class="service-item">
           <div class="service-content">
-            <a [href]="service.url" rel="noreferrer" target="_blank">{{ service.label }}</a>
-            @if (service.note) {
-              <span class="muted">— {{ service.note }}</span>
-            }
-            @if (service.offline) {
-              <span class="badge offline">offline</span>
-            }
+            <div class="service-main">
+              <a [href]="service.url" rel="noreferrer" target="_blank">{{ service.label }}</a>
+              @if (service.note) {
+                <span class="muted">— {{ service.note }}</span>
+              }
+            </div>
+            <div class="service-tags">
+              @if (service.status) {
+                <span class="badge status">{{ service.status }}</span>
+              }
+              @if (service.host) {
+                <span class="badge" [ngClass]="service.host">{{ service.host }}</span>
+              }
+              @if (service.offline) {
+                <span class="badge offline">offline</span>
+              }
+            </div>
           </div>
         </li>
       }
