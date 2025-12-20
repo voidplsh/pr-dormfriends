@@ -40,6 +40,18 @@ export const users: User[] = [
       { label: 'bsky', url: 'https://bsky.app/profile/orbitaldu.sk' },
     ],
   },
+  {
+    username: 'liawr',
+    bioShort: 'certified catgirl™',
+    bioLong: `touching puters unprofessionally ~`,
+    avatar: 'https://avatars.githubusercontent.com/u/153860025?v=4',
+    links: [
+      { label: 'subq', url: 'https://subq.een.today/@liawr' },
+      { label: 'dorm', url: 'https://dorm.social/@liawr' },
+      { label: 'git', url: 'https://git.een.today/liawr' },
+      { label: 'site', url: 'https://liawr.gay' },
+    ],
+  },
 ];
 
 /**
