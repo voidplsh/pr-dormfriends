@@ -52,6 +52,17 @@ export const users: User[] = [
       { label: 'site', url: 'https://liawr.gay' },
     ],
   },
+  {
+    username: 'abbyfluoroethane',
+    bioShort: 'cat space mechanic',
+    bioLong: `i like girls, things that fly, and pizza. in that order.`,
+    avatar: 'https://avatars.githubusercontent.com/u/53389189?v=4',
+    links: [
+      { label: 'website', url: 'https://bigaouette.com' },
+      { label: 'fedi | dormsoc', url: 'https://dorm.social/@abbyfluoroethane' },
+      { label: 'github', url: 'https://github.com/abbyfluoroethane' },
+    ],
+  },
 ];
 
 /**
