@@ -14,12 +14,12 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/people/people.component').then((m) => m.PeopleComponent),
   },
   {
-    path: 'user/:username',
-    loadComponent: () => import('./pages/user/user.component').then((m) => m.UserComponent),
-  },
-  {
     path: '404',
     loadComponent: () => import('./pages/not-found/not-found.component').then((m) => m.NotFoundComponent),
+  },
+  {
+    path: ':username',
+    loadComponent: () => import('./pages/user/user.component').then((m) => m.UserComponent),
   },
   {
     path: '**',

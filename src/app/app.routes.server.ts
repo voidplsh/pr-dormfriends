@@ -3,11 +3,11 @@ import { getAllUsernames } from './data/users';
 
 export const serverRoutes: ServerRoute[] = [
   {
-    path: 'user/:username',
+    path: ':username',
     renderMode: RenderMode.Prerender,
     fallback: PrerenderFallback.None,
     async getPrerenderParams() {
-      return getAllUsernames().map((username) => ({ username }));
+      return getAllUsernames().map((username) => ({ username: '~' + username }));
     },
   },
   {

@@ -16,8 +16,13 @@ export class UserComponent implements OnInit {
   user: User | null = null;
 
   ngOnInit(): void {
-    const username = this.route.snapshot.paramMap.get('username');
+    let username = this.route.snapshot.paramMap.get('username');
     if (username) {
+      // Remove the ~ prefix if present
+      if (username.startsWith('~')) {
+        username = username.substring(1);
+      }
+
       const foundUser = findUserByUsername(username);
       if (foundUser) {
         this.user = foundUser;
