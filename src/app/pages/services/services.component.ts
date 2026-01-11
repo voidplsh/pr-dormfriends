@@ -27,6 +27,12 @@ export class ServicesComponent {
       host: 'basalt',
       status: 'active',
     },
+    {
+      label: 'dormcord',
+      url: 'https://discord.gg/ZDxszm2QqF',
+      note: 'our discord server',
+      status: 'active',
+    },
     { label: 'git.elrant.team', url: 'https://git.elrant.team', note: 'forgejo', host: 'jasper', status: 'active' },
     {
       label: 'radio.dorm.social',
