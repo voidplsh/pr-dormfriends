@@ -77,7 +77,13 @@ export class ServicesComponent {
       host: 'jasper',
       status: 'active',
     },
-
+    {
+      label: 'mumble.dorm.social',
+      url: 'mumble://mumble.dorm.social',
+      note: 'murmurd, no web gui',
+      host: 'basalt',
+      status: 'active',
+    },
     {
       label: 'xmpp.dorm.social',
       url: '',
@@ -89,13 +95,6 @@ export class ServicesComponent {
       label: 'matrix.dorm.social',
       url: '',
       note: 'tuwunel, no web gui',
-      host: 'basalt',
-      status: 'active',
-    },
-    {
-      label: 'mumble.dorm.social',
-      url: '',
-      note: 'murmurd, no web gui',
       host: 'basalt',
       status: 'active',
     },
