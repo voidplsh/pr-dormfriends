@@ -46,8 +46,8 @@ export const users: User[] = [
     bioLong: `touching puters unprofessionally ~`,
     avatar: '/pfp/liank.jpg',
     links: [
-      { label: 'dorm', url: 'https://dorm.social/@liawr' },
-      { label: 'git', url: 'https://git.een.today/liawr' },
+      { label: 'dorm', url: 'https://dorm.social/@voidplsh' },
+      { label: 'git', url: 'https://git.een.today/voidplsh' },
       { label: 'site', url: 'https://voidpl.sh' },
     ],
   },
