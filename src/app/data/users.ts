@@ -41,15 +41,14 @@ export const users: User[] = [
     ],
   },
   {
-    username: 'liawr',
-    bioShort: 'certified catgirl™',
+    username: 'lia',
+    bioShort: 'certified kitplushdolly™',
     bioLong: `touching puters unprofessionally ~`,
-    avatar: '/pfp/liawr.jpg',
+    avatar: '/pfp/liank.jpg',
     links: [
-      { label: 'subq', url: 'https://subq.een.today/@liawr' },
       { label: 'dorm', url: 'https://dorm.social/@liawr' },
       { label: 'git', url: 'https://git.een.today/liawr' },
-      { label: 'site', url: 'https://liawr.gay' },
+      { label: 'site', url: 'https://voidpl.sh' },
     ],
   },
   {
